@@ -1,0 +1,91 @@
+<html>
+<head>
+<style>
+body {margin: 0;background-color: white; font-family: 'Chilanka';}
+
+#menuToggle { position: absolute; top: 30px; left: 30px; z-index: 1; -webkit-user-select: none; user-select: none; }
+
+#menuToggle a { text-decoration: none; color: white; transition: color 0.6s ease; text-align: center; } 
+
+#menuToggle a:hover { color: black; } 
+
+#menuToggle input { display: block; width: 100%; height: 32px; position: absolute; top: -7px;  cursor: pointer; opacity: 0; z-index: 2; -webkit-touch-callout: none; } 
+
+#menuToggle span { display: block; width: 33px; height: 4px; margin-bottom: 5px; position: relative; background: white; border-radius: 3px;  z-index: 1; transform-origin: 4px 0px; transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease; }
+
+#menuToggle span:first-child { transform-origin: 0% 0%; }
+
+#menuToggle span:nth-last-child(2) { transform-origin: 0% 100%; }
+
+#menuToggle input:checked ~ span { opacity: 1; transform: rotate(45deg) translate(-2px, -1px); background: white; }
+
+#menuToggle input:checked ~ span:nth-last-child(3) { opacity: 0; transform: rotate(0deg) scale(0.2, 0.2); } 
+
+#menuToggle input:checked ~ span:nth-last-child(2) { transform: rotate(-45deg) translate(0, -1px); }
+
+#menu { position: absolute; width: 280px; margin: -100px 0 0 -50px; padding: 50px; padding-top: 125px; background: darkblue; list-style-type: none; -webkit-font-smoothing: antialiased; transform-origin: 0% 0%; transform: translate(-100%, 0); transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); height: 450px;}
+
+#menu li { padding: 10px 0; font-size: 20px; }
+
+#menuToggle input:checked ~ ul { transform: none; }
+
+.header{padding: 10px; background-color: darkblue; height: 55px;}
+.clear{clear: both;}
+
+.footer{width: 100%; height: 60px; background-color: darkblue; margin-top: 200px;}
+.footer p { color: white; text-align: center; margin-top: 2px;}
+
+
+
+
+
+</style>
+</head>
+
+<body>
+<div class="header">
+<h2 style="text-align: center; color: white; margin-left: 30px;" > matematikami.  </h2>
+<div class="clear"></div>
+</div>
+<nav role="navigation"> 
+ <div id="menuToggle">
+ <input type="checkbox" /> 
+ <span></span> 
+ <span></span> 
+ <span></span>
+ <ul id="menu"> 
+ <a href="rumah 1.html"><li><img src="mtk 24.png" style="height: 30px; width: 30px; margin-right: 10px; "></img>Home</li></a> 
+<hr style="border-color: white; border-style: dashed;">
+<a href="tentang 1.html"><li><img src="mtk 22.png" style="height: 38px; width: 38px; margin-right: 10px; "></img>About</li></a> 
+<hr style="border-color: white; border-style: dashed;">
+<a href="materi.html"><li><img src="mtk 23.png" style="height: 38px; width: 38px; margin-right: 10px; "></img>materi</li></a> 
+<hr style="border-color: white; border-style: dashed;">
+ <a href="tutorial.html"><li><img src="mtk 1.png" style="height: 30px; width: 30px; margin-right: 10px; "></img>tutorial</li></a> 
+<hr style="border-color: white; border-style: dashed;">
+<a href="video materi.html"><li><img src="mtk 2.png" style="height: 30px; width: 30px; margin-right: 10px; "></img>video materi</li></a> 
+<hr style="border-color: white; border-style: dashed;">
+ <a href="contohsoal.html"><li><img src="mtk 3.png" style="height: 30px; width: 30px; margin-right: 10px; "></img>contoh soal</li></a> 
+<hr style="border-color: white; border-style: dashed;">
+</ul>
+ </div> 
+ </nav> 
+
+<img src ="mtk 4 .jpg" style ="height: 195px; width: 330px; margin-left: 15px; margin-top: 30px;"/>
+<h2 style ="text-align: center;"> video tutorial pengurangan </h2>
+<p style ="margin-left: 18px; font-size: 14px; padding-right: 20px;"> halo teman-teman selamat datang di halaman ini, di halaman ini saya akan memberikan rekomendasi video tutorial cara menghitung, penjumlahan, pengurangan, perkalian dan pembagian, silakan klik tombol di bawah ini untuk melihat video rekomendasi cara menghitung penjumlahan dari kami ^^, selamat menonton dan selamat belajar   </p>
+
+<button onclick ="document.location='https://youtu.be/GQPCNu-YLZI' " style="color: black; background-color: white; border-radius: 18px; border-color: darkblue; width: 100px; height: 40px; margin-top: 8px; margin-bottom: 30px; margin-left: 15px;">video 1  </button>
+
+<button onclick ="document.location='https://youtu.be/bdx64w2lG_Y' " style="color: black; background-color: white; border-radius: 18px; border-color: darkblue; width: 100px; height: 40px; margin-top: 8px; margin-bottom: 30px; margin-left: 15px;">video 2  </button>
+
+<button onclick ="document.location='https://youtu.be/EwaDjQqy-Sk' " style="color: black; background-color: white; border-radius: 18px; border-color: darkblue; width: 100px; height: 40px; margin-top: 8px; margin-bottom: 30px; margin-left: 15px;">video 3  </button>
+
+
+
+
+ </body>
+</html>
+<div class= "footer">
+<br>
+<p> copyright 2023 matematikami.  </p>
+</div>
